@@ -1,0 +1,1 @@
+4ìc<?php exit; ?>a:1:{s:7:"content";s:275:"{"common.install":1676326876,"common.install_version":"2.2.12","common.show_note.nginx_restart_required":"false","license.status":"no_key","license.next_check":1676758876,"license.terms":"","common.hide_note_wp_content_permissions":"true","license.community_terms":"decline"}";}

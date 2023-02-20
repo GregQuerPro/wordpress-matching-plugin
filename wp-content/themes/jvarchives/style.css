@@ -1,0 +1,16 @@
+/*
+Theme Name: JV Archives
+Description: L'encyclopédie du Jeu Vidéo.
+Author: Grégory Querrien
+Version: 1.0
+Text Domain: domain
+*/
+
+.wp-block-embed iframe {
+    width: 100% !important;
+    aspect-ratio: 16/9;
+}
+
+p {
+    font-size: 18px !important;
+}

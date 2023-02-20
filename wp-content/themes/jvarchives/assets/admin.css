@@ -1,0 +1,17 @@
+.manage-column.column-thumbnail {
+    width: 150px;
+}
+
+.bullet {
+    max-width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.bullet.bullet-no {
+    background-color: lightpink;
+}
+
+.bullet.bullet-yes {
+    background-color: lightgreen;
+}
