@@ -1,6 +1,4 @@
 <?php
-/** Enable W3 Total Cache */
-define('WP_CACHE', true); // Added by W3 Total Cache
 
 /**
  * The base configuration for WordPress
@@ -24,10 +22,13 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 
-define('DISABLE_WP_CRON', true);
+// define('WP_DEBUG', true);
+
+
+// define('DISABLE_WP_CRON', true);
 
 // algo-metabox
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'wordpress-mb');
 
 /** Database username */
 define('DB_USER', 'root');

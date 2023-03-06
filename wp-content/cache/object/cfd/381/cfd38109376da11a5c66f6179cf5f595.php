@@ -1,1 +1,0 @@
-4ìc<?php exit; ?>a:1:{s:7:"content";a:4:{s:52:"_site_transient_timeout_wpmdb_disabled_legacy_addons";b:1;s:11:"medium_crop";b:1;s:17:"medium_large_crop";b:1;s:10:"large_crop";b:1;}}
