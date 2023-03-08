@@ -42,22 +42,13 @@ add_action('admin_print_styles', 'mb_matching_scripts');
 
 function mon_shortcode_function()
 {
+
     global $wpdb;
     $results = $wpdb->get_results("SELECT * FROM user_searches_options WHERE to_hide = 0");
 
 
-    if (!empty($_GET)) {
-        require_once("class/UserSearch.php");
-        // var_dump($_POST);
-        $userSearch = new UserSearch($_GET);
-        // var_dump($_GET);
-        $exist = $userSearch->formatData();
-        if ($exist) {
-            $userSearch->insertData();
-        }
-    }
 ?>
-    <form class="user-searches-ctn" action="/" method="GET">
+    <form class="user-searches-ctn">
         <?php
         foreach ($results as $result) {
             $name = lcfirst($result->name);
@@ -67,20 +58,81 @@ function mon_shortcode_function()
                 <label for="<?= $name ?>[importance]">Importance <?= $name ?></label><br>
                 <div>
                     <input type="hidden" name="<?= $name ?>[sign]" value="<?= $result->sign ?>">
-                    <label for="<?= $name ?>[importance]">Important</label>
-                    <input type="hidden" name="<?= $name ?>[important][weight]" value="<?= $result->weight_base ?>">
-                    <input type="checkbox" name="<?= $name ?>[important][choice]" id="<?= $name ?>[importance]">
-                    <label for="<?= $name ?>[essentiel]">Essentiel</label>
-                    <input type="hidden" name="<?= $name ?>[essentiel][weight]" value="<?= $result->weight_essential ?>">
-                    <input type="checkbox" name="<?= $name ?>[essentiel][choice]" id="<?= $name ?>[essentiel]">
+                    <label for="basic_<?= $name ?>">Important</label>
+                    <input type="radio" name="<?= $name ?>" id="basic_<?= $name ?>" class="radio" value="<?= $name ?>" checked>
+                    <label for="essential_<?= $name ?>">Essentiel</label>
+                    <input type="radio" name="<?= $name ?>" id="essential_<?= $name ?>" value="<?= $name ?>" class="radio_essentiel">
                 </div>
             </div>
         <?php
         }
         ?>
-        <button type="submit">Valider</button>
+        <button id="btn" type="submit">Valider</button>
     </form>
+    <script>
+        const form = document.querySelector('.user-searches-ctn');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Récupérer les critères de la recherche dans l'url
+            const queryString = window.location.search;
+
+            // Récupérer la liste des critères essentiels
+            const radioEssentiel = document.querySelectorAll('.radio_essentiel');
+            const radioChecked = [];
+            radioEssentiel.forEach(item => {
+                if (item.checked) {
+                    radioChecked.push(item.name)
+                }
+            })
+
+
+            // console.log(params);
+            // console.log(radioChecked);
+
+            var formData = new FormData();
+            formData.append('action', 'my_ajax_action');
+            formData.append('params', queryString);
+            formData.append('essentials', radioChecked);
+
+            fetch('<?php echo admin_url("admin-ajax.php"); ?>?', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => console.log(data))
+                .catch(error => console.log(error));
+        });
+    </script>
+
 <?php
 
 }
 add_shortcode('matching', 'mon_shortcode_function');
+
+
+function my_ajax_function()
+{
+    if (!empty($_POST)) {
+        $queryString =  $_POST['params'];
+        $essentials = $_POST['essentials'];
+        $queryString = substr($queryString, 1);
+
+        // Parse la chaîne de requête en tableau
+        parse_str($queryString, $queryArray);
+
+        require_once("class/UserSearch.php");
+        $userSearch = new UserSearch($queryArray, $essentials);
+        // var_dump($_GET);
+        $exist = $userSearch->formatData();
+        if ($exist) {
+            $userSearch->insertData();
+        }
+    }
+    // Affiche le tableau résultant
+    // print_r($queryArray);
+    // var_dump($essentials);
+    die();
+}
+add_action('wp_ajax_my_ajax_action', 'my_ajax_function');
+add_action('wp_ajax_nopriv_my_ajax_action', 'my_ajax_function');
