@@ -12,6 +12,37 @@ defined('ABSPATH') or die('rien à voir');
 
 
 /**
+ * Création Table Personnalisée
+ */
+
+register_activation_hook(__FILE__, 'mon_plugin_activation');
+
+function mon_plugin_activation()
+{
+    global $wpdb;
+
+    $charset_collate = $wpdb->get_charset_collate();
+    $table_name = 'user_searches';
+
+    $sql = "CREATE TABLE $table_name (
+        id bigint NOT NULL AUTO_INCREMENT,
+        latitude text NOT NULL,
+        longitude text NOT NULL,
+        rayon text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+        price text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+        surface text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+        room text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
+        nbr_criteria int NOT NULL,
+        user_id bigint
+        PRIMARY KEY  (id)
+    ) $charset_collate;";
+
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
+}
+
+
+/**
  * Register a custom menu page.
  */
 function custom_menu_page()

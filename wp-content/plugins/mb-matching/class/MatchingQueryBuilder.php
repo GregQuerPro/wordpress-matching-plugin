@@ -7,17 +7,21 @@ class MatchingQueryBuilder
     {
         global $wpdb;
 
-        $searchesOptions = $wpdb->get_results('SELECT name, sign FROM user_searches_options');
+        $searchesOptions = $wpdb->get_results('SELECT name, sign FROM user_searches_options WHERE to_hide = 0');
 
         $condition = '';
 
         for ($i = 0; $i < count($searchesOptions); $i++) {
             // var_dump(count($searchesOptions));
             // var_dump($i);
+            if ($searchesOptions[$i]->sign === 'max') {
+                $searchesOptions[$i]->sign = '<=';
+            } else if ($searchesOptions[$i]->sign === 'min') {
+                $searchesOptions[$i]->sign = '>=';
+            }
             if ($i !== count($searchesOptions) - 1) {
                 if ($searchesOptions[$i]->name === 'Rayon') {
-                    $condition .= 'CAST(mb.room AS UNSIGNED) >= CAST(mb.room AS UNSIGNED) 
-                    AND (6371 * acos(cos(radians(us.latitude)) * cos(radians(mb.latitude))
+                    $condition .= '(6371 * acos(cos(radians(us.latitude)) * cos(radians(mb.latitude))
                     * cos(radians(mb.longitude) - radians(us.longitude))
                     + sin(radians(us.latitude)) * sin(radians(mb.latitude)))) <= CAST(us.rayon AS UNSIGNED) AND ';
                 } else {
@@ -25,8 +29,7 @@ class MatchingQueryBuilder
                 }
             } else {
                 if ($searchesOptions[$i]->name === 'Rayon') {
-                    $condition .= 'CAST(mb.room AS UNSIGNED) >= CAST(mb.room AS UNSIGNED) 
-                    AND (6371 * acos(cos(radians(us.latitude)) * cos(radians(mb.latitude))
+                    $condition .= '(6371 * acos(cos(radians(us.latitude)) * cos(radians(mb.latitude))
                     * cos(radians(mb.longitude) - radians(us.longitude))
                     + sin(radians(us.latitude)) * sin(radians(mb.latitude)))) <= CAST(us.rayon AS UNSIGNED)';
                 } else {
@@ -110,6 +113,6 @@ class MatchingQueryBuilder
 
         // var_dump($users);
 
-        // var_dump($sql);
+        var_dump($sql);
     }
 }
