@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Plugin Name: AC3 Import
- */
-
 global $wpdb;
 
 $table = $wpdb->prefix . "ac3_importer_crons";
