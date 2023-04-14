@@ -10,6 +10,10 @@
 
 defined('ABSPATH') or die('rien à voir');
 
+// var_dump(__FILE__);
+
+require_once("class/MbMatchingEventListener.php");
+MbMatchingEventListener::register();
 
 /**
  * Register a custom menu page.
@@ -27,7 +31,6 @@ function custom_menu_page()
     );
 }
 add_action('admin_menu', 'custom_menu_page');
-
 
 function mb_matching_scripts()
 {

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<LISTEPA date="2018-11-29 12:37:55">
+    <BIEN>
+        <INFOS>
+            <TITLE>Appartement Paris 10eme arrondissement</TITLE>
+        </INFOS>
+        <VENTE>
+            <PRIX>1060000</PRIX>
+            <PRIX_HORS_HONO_ACQ>1050000</PRIX_HORS_HONO_ACQ>
+            <POURCENTAGE_HONORAIRE>0</POURCENTAGE_HONORAIRE>
+            <GARANTIE_REVENTE>NON</GARANTIE_REVENTE>
+        </VENTE>
+        <APPARTEMENT>
+            <HONORAIRES />
+            <NBRE_PIECES>14</NBRE_PIECES>
+            <NBRE_CHAMBRES>1</NBRE_CHAMBRES>
+            <SURFACE_HABITABLE>200</SURFACE_HABITABLE>
+            <SURFACE_TERRAIN>120</SURFACE_TERRAIN>
+            <DELAI_MANDAT>14</DELAI_MANDAT>
+            <PRIX_M2>5250</PRIX_M2>
+            <NEUF_ANCIEN>Neuf</NEUF_ANCIEN>
+            <CP_VILLE>29200 Brest</CP_VILLE>
+            <CATEGORIE_MERE>49</CATEGORIE_MERE>
+            <CATEGORIE>1</CATEGORIE>
+            <VENDU>0</VENDU>
+        </APPARTEMENT>
+        <PIECES>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Pièce de vie cuisine ouverte]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[60.00]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Entrée directement sur le séjour avec triple expositions et plafond en cathédrale. Une baie vitrée donnant sur une terrasse et la piscine, une autre donnant sur une seconde terrasse. Espace bureau sous l'escalier.Carrelage (40cm/40cm) / HSP : de 2.50m à 5.30m Cuisine ouverte sur le séjour : faillence en grez de cologne, four, micro-onde, plaques électriques céramiques, lave vaisselle, double évier, table intégrée. Une fenêtre ossilo-battante]]></DESCRIPTION_PIECE>
+            </PIECE>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Chambre 1]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[9.70]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Accès par le dégagement, parquet flottant au sol, peinture aux murs, une fenêtre côté jardin avant orientée Est, store manuel]]></DESCRIPTION_PIECE>
+            </PIECE>
+        </PIECES>
+        <TEST></TEST>
+        <CUSTOM>
+            <NUM_QRCODE>1</NUM_QRCODE>
+        </CUSTOM>
+    </BIEN>
+    <BIEN>
+        <INFOS>
+            <TITLE>Appartement Paris 2eme arrondissement</TITLE>
+        </INFOS>
+        <VENTE>
+            <PRIX>1060000</PRIX>
+            <PRIX_HORS_HONO_ACQ>1050000</PRIX_HORS_HONO_ACQ>
+            <POURCENTAGE_HONORAIRE>0</POURCENTAGE_HONORAIRE>
+            <GARANTIE_REVENTE>NON</GARANTIE_REVENTE>
+        </VENTE>
+        <APPARTEMENT>
+            <HONORAIRES />
+            <NBRE_PIECES>14</NBRE_PIECES>
+            <NBRE_CHAMBRES>1</NBRE_CHAMBRES>
+            <SURFACE_HABITABLE>200</SURFACE_HABITABLE>
+            <SURFACE_TERRAIN>120</SURFACE_TERRAIN>
+            <DELAI_MANDAT>14</DELAI_MANDAT>
+            <PRIX_M2>5250</PRIX_M2>
+            <NEUF_ANCIEN>Neuf</NEUF_ANCIEN>
+            <CP_VILLE>29200 Brest</CP_VILLE>
+            <CATEGORIE_MERE>49</CATEGORIE_MERE>
+            <CATEGORIE>1</CATEGORIE>
+            <VENDU>0</VENDU>
+        </APPARTEMENT>
+        <PIECES>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Pièce de vie cuisine ouverte]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[60.00]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Entrée directement sur le séjour avec triple expositions et plafond en cathédrale. Une baie vitrée donnant sur une terrasse et la piscine, une autre donnant sur une seconde terrasse. Espace bureau sous l'escalier.Carrelage (40cm/40cm) / HSP : de 2.50m à 5.30m Cuisine ouverte sur le séjour : faillence en grez de cologne, four, micro-onde, plaques électriques céramiques, lave vaisselle, double évier, table intégrée. Une fenêtre ossilo-battante]]></DESCRIPTION_PIECE>
+            </PIECE>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Chambre 1]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[9.70]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Accès par le dégagement, parquet flottant au sol, peinture aux murs, une fenêtre côté jardin avant orientée Est, store manuel]]></DESCRIPTION_PIECE>
+            </PIECE>
+        </PIECES>
+        <TEST></TEST>
+        <CUSTOM>
+            <NUM_QRCODE>2</NUM_QRCODE>
+        </CUSTOM>
+    </BIEN>
+    <BIEN>
+        <INFOS>
+            <TITLE>Appartement Paris 23eme arrondissement</TITLE>
+        </INFOS>
+        <VENTE>
+            <PRIX>1060000</PRIX>
+            <PRIX_HORS_HONO_ACQ>1050000</PRIX_HORS_HONO_ACQ>
+            <POURCENTAGE_HONORAIRE>0</POURCENTAGE_HONORAIRE>
+            <GARANTIE_REVENTE>NON</GARANTIE_REVENTE>
+        </VENTE>
+        <APPARTEMENT>
+            <HONORAIRES />
+            <NBRE_PIECES>14</NBRE_PIECES>
+            <NBRE_CHAMBRES>1</NBRE_CHAMBRES>
+            <SURFACE_HABITABLE>200</SURFACE_HABITABLE>
+            <SURFACE_TERRAIN>120</SURFACE_TERRAIN>
+            <DELAI_MANDAT>14</DELAI_MANDAT>
+            <PRIX_M2>5250</PRIX_M2>
+            <NEUF_ANCIEN>Neuf</NEUF_ANCIEN>
+            <CP_VILLE>29200 Brest</CP_VILLE>
+            <CATEGORIE_MERE>49</CATEGORIE_MERE>
+            <CATEGORIE>1</CATEGORIE>
+            <VENDU>0</VENDU>
+        </APPARTEMENT>
+        <PIECES>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Pièce de vie cuisine ouverte]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[60.00]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Entrée directement sur le séjour avec triple expositions et plafond en cathédrale. Une baie vitrée donnant sur une terrasse et la piscine, une autre donnant sur une seconde terrasse. Espace bureau sous l'escalier.Carrelage (40cm/40cm) / HSP : de 2.50m à 5.30m Cuisine ouverte sur le séjour : faillence en grez de cologne, four, micro-onde, plaques électriques céramiques, lave vaisselle, double évier, table intégrée. Une fenêtre ossilo-battante]]></DESCRIPTION_PIECE>
+            </PIECE>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Chambre 1]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[9.70]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Accès par le dégagement, parquet flottant au sol, peinture aux murs, une fenêtre côté jardin avant orientée Est, store manuel]]></DESCRIPTION_PIECE>
+            </PIECE>
+        </PIECES>
+        <TEST></TEST>
+        <CUSTOM>
+            <NUM_QRCODE>4</NUM_QRCODE>
+        </CUSTOM>
+    </BIEN>
+    <BIEN>
+        <INFOS>
+            <TITLE>Appartement Paris 6eme arrondissement</TITLE>
+        </INFOS>
+        <VENTE>
+            <PRIX>1060000</PRIX>
+            <PRIX_HORS_HONO_ACQ>1050000</PRIX_HORS_HONO_ACQ>
+            <POURCENTAGE_HONORAIRE>0</POURCENTAGE_HONORAIRE>
+            <GARANTIE_REVENTE>NON</GARANTIE_REVENTE>
+        </VENTE>
+        <APPARTEMENT>
+            <HONORAIRES />
+            <NBRE_PIECES>14</NBRE_PIECES>
+            <NBRE_CHAMBRES>1</NBRE_CHAMBRES>
+            <SURFACE_HABITABLE>200</SURFACE_HABITABLE>
+            <SURFACE_TERRAIN>120</SURFACE_TERRAIN>
+            <DELAI_MANDAT>14</DELAI_MANDAT>
+            <PRIX_M2>5250</PRIX_M2>
+            <NEUF_ANCIEN>Neuf</NEUF_ANCIEN>
+            <CP_VILLE>29200 Brest</CP_VILLE>
+            <CATEGORIE_MERE>49</CATEGORIE_MERE>
+            <CATEGORIE>1</CATEGORIE>
+            <VENDU>0</VENDU>
+        </APPARTEMENT>
+        <PIECES>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Pièce de vie cuisine ouverte]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[60.00]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Entrée directement sur le séjour avec triple expositions et plafond en cathédrale. Une baie vitrée donnant sur une terrasse et la piscine, une autre donnant sur une seconde terrasse. Espace bureau sous l'escalier.Carrelage (40cm/40cm) / HSP : de 2.50m à 5.30m Cuisine ouverte sur le séjour : faillence en grez de cologne, four, micro-onde, plaques électriques céramiques, lave vaisselle, double évier, table intégrée. Une fenêtre ossilo-battante]]></DESCRIPTION_PIECE>
+            </PIECE>
+            <PIECE>
+                <TYPE_PIECE><![CDATA[Chambre 1]]></TYPE_PIECE>
+                <NIVEAU_PIECE><![CDATA[RDC]]></NIVEAU_PIECE>
+                <SURFACE_PIECE><![CDATA[9.70]]></SURFACE_PIECE>
+                <DESCRIPTION_PIECE><![CDATA[Accès par le dégagement, parquet flottant au sol, peinture aux murs, une fenêtre côté jardin avant orientée Est, store manuel]]></DESCRIPTION_PIECE>
+            </PIECE>
+        </PIECES>
+        <TEST></TEST>
+        <CUSTOM>
+            <NUM_QRCODE>3</NUM_QRCODE>
+        </CUSTOM>
+    </BIEN>
+</LISTEPA>
